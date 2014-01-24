@@ -1,2 +1,60 @@
-﻿body {
+﻿#TitleLabel {
+    font-size: 30px;
+    font-family: "Verdana", "Arial", sans-serif;
+}
+
+#maincontainer {
+    margin-left: 40px;
+    font-family: "Verdana", "Arial", sans-serif;
+}
+
+#MyReceiptPanel {
+    margin-top: 50px;
+    width: 200px;
+    height: 300px;
+    border: solid 1px #000;
+}
+
+#ReceiptLabel {
+    margin-left: 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#MottoLabel {
+    margin-left: 70px;
+    font-size: 13px;
+}
+
+#LineLabel,
+#EndLineLabel {
+    margin-left: 10px;
+}
+
+#PhoneLabel {
+    margin-left: 35px;
+    font-size: 13px;
+}
+
+#OpeningHoursLabel {
+    margin-left: 26px;
+    font-size: 13px;
+}
+
+#TotalLabel, 
+#DiscountLabel,
+#SavingLabel,
+#ToPayLabel {
+    margin-left: 10px;
+    font-size: 11px;
+}
+
+#BranschNoLabel {
+    margin-left: 25px;
+    font-size: 13px;
+}
+
+#GreetingsLabel {
+    margin-left: 35px;
+    font-size: 13px;
 }

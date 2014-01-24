@@ -13,5 +13,10 @@ namespace _1dv406_1_2_kassakvitto
         {
 
         }
+
+        protected void SendButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
