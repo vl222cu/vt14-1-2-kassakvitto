@@ -11,12 +11,16 @@ namespace _1dv406_1_2_kassakvitto
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void SendButton_Click(object sender, EventArgs e)
         {
-
+            if (IsPostBack) 
+            {
+                MyReceiptPanel.Visible = true;
+            }
+            
         }
     }
 }

@@ -18,24 +18,22 @@
                     <asp:Label ID="TextLabel" runat="server" Text="Total köpesumma:"></asp:Label>
                 </p>
                 <p>
-                    <asp:TextBox ID="MyTextBox" runat="server"></asp:TextBox>kr
+                    <asp:TextBox ID="MyTextBox" runat="server" ViewStateMode="Enabled"></asp:TextBox>kr
+                    
                 </p>
                 <p>
                     <asp:Button ID="Button1" runat="server" Text="Beräkna rabatt" OnClick="SendButton_Click" />
                 </p>
-
-                <asp:Panel ID="MyReceiptPanel" runat="server">
+                <asp:Panel ID="MyReceiptPanel" runat="server" Visible="false">
                     <p>
                         <asp:Label ID="ReceiptLabel" runat="server" Text="Vivlas Vitamines"></asp:Label><br />
                         <asp:Label ID="MottoLabel" runat="server" Text="Live life!"></asp:Label>
                     </p>
-                    <p>
-                        <asp:Label ID="PhoneLabel" runat="server" Text="Tel: 0772-28 80 00"></asp:Label><br />
-                        <asp:Label ID="OpeningHoursLabel" runat="server" Text="Öppettider 8:00-18:00"></asp:Label>
-                    </p>
-                    <asp:Label ID="LineLabel" runat="server" Text="-------------------------"></asp:Label><br />  
+                    <asp:Label ID="PhoneLabel" runat="server" Text="Tel: 0772-28 80 00"></asp:Label><br />
+                    <asp:Label ID="OpeningHoursLabel" runat="server" Text="Öppettider 8:00-18:00"></asp:Label><br />
+                    <asp:Label ID="LineLabel" runat="server" Text="-------------------------"></asp:Label><br />
                     <asp:Label ID="TotalLabel" runat="server" Text="Totalt"></asp:Label><br />
-                    <asp:Label ID="DiscountLabel" runat="server" Text="Rabattsats 10%"></asp:Label><br />
+                    <asp:Label ID="DiscountLabel" runat="server" Text="Rabattsats"></asp:Label><br />
                     <asp:Label ID="SavingLabel" runat="server" Text="Rabatt"></asp:Label><br />
                     <asp:Label ID="ToPayLabel" runat="server" Text="Att betala"></asp:Label><br />
                     <asp:Label ID="EndLineLabel" runat="server" Text="-------------------------"></asp:Label><br />
@@ -45,5 +43,8 @@
             </div>
         </div>
     </form>
+    <script type="text/javascript">
+        document.getElementById("MyTextBox").focus();
+    </script>
 </body>
 </html>
