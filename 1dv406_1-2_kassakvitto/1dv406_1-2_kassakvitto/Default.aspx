@@ -19,7 +19,8 @@
                 </p>
                 <p>
                     <asp:TextBox ID="MyTextBox" runat="server" ViewStateMode="Enabled"></asp:TextBox>kr
-                    
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Textfältet får inte vara tomt!" ControlToValidate="MyTextBox"></asp:RequiredFieldValidator>
+                    <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Köpesumman måste vara ett tal större än 0" ControlToValidate="MyTextBox" Type="Double" ValueToCompare="0" Operator="GreaterThan"></asp:CompareValidator>
                 </p>
                 <p>
                     <asp:Button ID="Button1" runat="server" Text="Beräkna rabatt" OnClick="SendButton_Click" />
