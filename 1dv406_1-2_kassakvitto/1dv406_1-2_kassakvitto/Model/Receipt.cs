@@ -25,7 +25,7 @@ namespace _1dv406_1_2_kassakvitto.Model
             }
             set
             {
-                if (_subtotal <= 0.0)
+                if (value <= 0.0)
                 {
                     throw new ArgumentOutOfRangeException("Måste vara ett tal större än 0");
                 }
