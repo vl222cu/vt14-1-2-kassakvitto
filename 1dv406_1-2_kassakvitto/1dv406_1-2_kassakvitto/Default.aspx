@@ -17,15 +17,25 @@
                 <p>
                     <asp:Label ID="TextLabel" runat="server" Text="Total köpesumma:"></asp:Label>
                 </p>
+                <%-- Textbox och validering --%>
                 <p>
                     <asp:TextBox ID="MyTextBox" runat="server"></asp:TextBox>kr
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Textfältet får inte vara tomt!" ControlToValidate="MyTextBox" Display="Dynamic"></asp:RequiredFieldValidator>
-                    <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Köpesumman måste vara ett tal större än 0" ControlToValidate="MyTextBox" Type="Double" ValueToCompare="0" Operator="GreaterThan" Display="Dynamic"></asp:CompareValidator>
-                    <asp:CompareValidator ID="CompareValidator2" runat="server" ErrorMessage="För stort belopp eller ogiltigt inmatning" ControlToValidate="MyTextBox" Type="Double" ValueToCompare="1000001" Operator="LessThan" Display="Dynamic"></asp:CompareValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                        ErrorMessage="Textfältet får inte vara tomt!" ControlToValidate="MyTextBox" 
+                        Display="Dynamic"></asp:RequiredFieldValidator>
+                    <asp:CompareValidator ID="CompareValidator1" runat="server" 
+                        ErrorMessage="Köpesumman måste vara ett tal större än 0" ControlToValidate="MyTextBox" 
+                        Type="Double" ValueToCompare="0" Operator="GreaterThan" Display="Dynamic">
+                    </asp:CompareValidator>
+                    <asp:CompareValidator ID="CompareValidator2" runat="server" 
+                        ErrorMessage="För stort belopp eller ogiltigt inmatning" ControlToValidate="MyTextBox" 
+                        Type="Double" ValueToCompare="10000000" Operator="LessThan" Display="Dynamic">
+                    </asp:CompareValidator>
                 </p>
                 <p>
                     <asp:Button ID="SendButton" runat="server" Text="Beräkna rabatt" OnClick="SendButton_Click" />
                 </p>
+                <%-- Kvittolayout --%>
                 <asp:Panel ID="MyReceiptPanel" runat="server" Visible="false">
                     <p>
                         <asp:Label ID="ReceiptLabel" runat="server" Text="Vivlas Vitamines"></asp:Label><br />
