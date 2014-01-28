@@ -16,14 +16,14 @@ namespace _1dv406_1_2_kassakvitto
 
         protected void SendButton_Click(object sender, EventArgs e)
         {
-            if (IsPostBack) 
+            if (IsValid) 
             {
                 var receipt = new Model.Receipt(double.Parse(MyTextBox.Text));
                 MyReceiptPanel.Visible = true;
-                TotalLabel.Text = String.Format("Totalt {0,10:c}", receipt.Subtotal);
-                DiscountLabel.Text = String.Format("Rabattsats {0,10:p0}", receipt.DiscountRate);
-                SavingLabel.Text = String.Format("Rabatt {0,10:c}", receipt.MoneyOff);
-                ToPayLabel.Text = String.Format("Att betala {0,10:c}", receipt.Total);
+                TotalLabel.Text = String.Format("{0:c}", receipt.Subtotal);
+                DiscountLabel.Text = String.Format("{0:p0}", receipt.DiscountRate);
+                SavingLabel.Text = String.Format("{0:c}", receipt.MoneyOff);
+                ToPayLabel.Text = String.Format("{0:c}", receipt.Total);
             }
             
         }

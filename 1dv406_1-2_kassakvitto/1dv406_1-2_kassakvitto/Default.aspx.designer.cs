@@ -67,13 +67,22 @@ namespace _1dv406_1_2_kassakvitto {
         protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
         
         /// <summary>
-        /// Button1 control.
+        /// CompareValidator2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator2;
+        
+        /// <summary>
+        /// SendButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button SendButton;
         
         /// <summary>
         /// MyReceiptPanel control.
@@ -130,6 +139,15 @@ namespace _1dv406_1_2_kassakvitto {
         protected global::System.Web.UI.WebControls.Label LineLabel;
         
         /// <summary>
+        /// TotalTitleLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label TotalTitleLabel;
+        
+        /// <summary>
         /// TotalLabel control.
         /// </summary>
         /// <remarks>
@@ -137,6 +155,15 @@ namespace _1dv406_1_2_kassakvitto {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label TotalLabel;
+        
+        /// <summary>
+        /// DiscountTitleLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label DiscountTitleLabel;
         
         /// <summary>
         /// DiscountLabel control.
@@ -148,6 +175,15 @@ namespace _1dv406_1_2_kassakvitto {
         protected global::System.Web.UI.WebControls.Label DiscountLabel;
         
         /// <summary>
+        /// SavingTitleLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label SavingTitleLabel;
+        
+        /// <summary>
         /// SavingLabel control.
         /// </summary>
         /// <remarks>
@@ -155,6 +191,15 @@ namespace _1dv406_1_2_kassakvitto {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label SavingLabel;
+        
+        /// <summary>
+        /// ToPayTitleLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ToPayTitleLabel;
         
         /// <summary>
         /// ToPayLabel control.

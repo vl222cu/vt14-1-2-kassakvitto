@@ -1,11 +1,42 @@
-﻿#TitleLabel, h1 {
-    font-size: 30px;
+﻿#MyForm {
     font-family: "Verdana", "Arial", sans-serif;
 }
 
 #maincontainer {
-    margin-left: 40px;
-    font-family: "Verdana", "Arial", sans-serif;
+    width: 650px;
+    height: auto;
+    margin: auto;
+	padding: 20px;
+	overflow: hidden;
+    -moz-box-shadow: 0 0 5px 10px rgba(25,25,25,0.1);
+    -webkit-box-shadow: 0 0 5px 10px rgba(25,25,25,0.1);
+    box-shadow: 0 0 5px 10px rgba(25,25,25,0.1);
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #A4B3DB), color-stop(1, #FFF));
+    background: -webkit-linear-gradient(top, #A4B3DB 5%, #FFF 100%);
+    background: -moz-linear-gradient( top, #A4B3DB 5%, #FFF 100% );
+    background: -o-linear-gradient(top, #A4B3DB 5%, #FFF 100%);
+    background: linear-gradient(top, #A4B3DB 5%, #FFF 100%);
+}
+
+#content {
+    margin-left:100px;
+}
+
+#TitleLabel {
+    margin-left:100px;
+    color: #4A4A4A;
+    text-shadow: 1px 1px 0 rgb(163,163,163);
+}
+
+#SendButton {
+    margin-right: 10px;
+    -moz-box-shadow: 0 0 4px 0 #777;
+	-webkit-box-shadow: 0 0 4px 0 #777;
+	box-shadow: 0 0 4px 0 #777;
+	
+	-webkit-border-radius: 5px;  
+    -moz-border-radius: 5px;  
+    border-radius: 5px;
 }
 
 #MyReceiptPanel {
@@ -13,6 +44,11 @@
     width: 200px;
     height: 300px;
     border: solid 1px #000;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FFB67F), color-stop(1, #FFDDC3));
+    background: -webkit-linear-gradient(top, #FFB67F 5%, #FFDDC3 100%);
+    background: -moz-linear-gradient( top, #FFB67F 5%, #FFDDC3 100% );
+    background: -o-linear-gradient(top, #FFB67F 5%, #FFDDC3 100%);
+    background: linear-gradient(top, #FFB67F 5%, #FFDDC3 100%);
 }
 
 #ReceiptLabel {
@@ -41,12 +77,23 @@
     font-size: 13px;
 }
 
-#TotalLabel, 
+#TotalTitleLabel,
+#DiscountTitleLabel,
+#SavingTitleLabel,
+#ToPayTitleLabel {
+    font-size: 11px;
+    float: left;
+    margin-left: 11px;
+}
+
+#TotalLabel,
 #DiscountLabel,
 #SavingLabel,
 #ToPayLabel {
-    margin-left: 10px;
     font-size: 11px;
+    float: right;
+    margin-right: 13px;
+    
 }
 
 #BranschNoLabel {
@@ -59,7 +106,14 @@
     font-size: 13px;
 }
 
-h2, #error {
+#RequiredFieldValidator1,
+#CompareValidator1,
+#CompareValidator2 {
+    color: #ff0000;
+}
+
+h2, #error, a {
     font-family: "Verdana", "Arial", sans-serif;
 }
+
 
